@@ -1,10 +1,10 @@
 class Tarefa {
-  String titulo;
-  bool concluida;
+  String titulo; // criando variavel para nome da tarefa
+  bool concluida; // criando bool para status da tarefa
 
-  Tarefa(this.titulo, {this.concluida = false});
+  Tarefa(this.titulo, {this.concluida = false}); // construtor 
 
-  void marcarComoConcluida() {
-    concluida = true;
+  void marcarComoConcluida() { 
+    concluida = true; // bool status
   }
 }
