@@ -2,20 +2,22 @@ import 'dart:io';
 import 'package:todo_list_dart/servicos/gerenciador_tarefas.dart';
 
 class Menu {
-  final GerenciadorTarefas gerenciador;
+  final GerenciadorTarefas gerenciador; // chamando gerenciador de tarefas
 
-  Menu(this.gerenciador);
+  Menu(this.gerenciador); // istancia menu
 
   void exibirMenu() {
     while (true) {
+      // menu
       print("\n1 - Adicionar Tarefa");
       print("2 - Listar Tarefas");
       print("3 - Concluir Tarefa");
       print("4 - Remover Tarefa");
       print("5 - Sair");
       stdout.write("Opção: ");
-      String? opcao = stdin.readLineSync();
+      String? opcao = stdin.readLineSync(); // lê opção
 
+      //switch 
       switch (opcao) {
         case '1':
           stdout.write("Digite o nome da tarefa: ");
