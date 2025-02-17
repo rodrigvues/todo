@@ -1,14 +1,14 @@
 import 'package:todo_list_dart/modelos/tarefa.dart';
 
 class GerenciadorTarefas {
-  List<Tarefa> tarefas = [];
+  List<Tarefa> tarefas = []; // criando lista
 
-  void adicionarTarefa(String titulo) {
+  void adicionarTarefa(String titulo) { // metodo adicionar 
     tarefas.add(Tarefa(titulo));
     print("Tarefa adicionada: $titulo");
   }
 
-  void listarTarefas() {
+  void listarTarefas() { // metodo listar
     if (tarefas.isEmpty) {
       print("Lista de Tarefas Vazia.");
       return;
@@ -20,7 +20,7 @@ class GerenciadorTarefas {
     }
   }
 
-  void concluirTarefa(int index) {
+  void concluirTarefa(int index) { // metodo concluir
     if (index >= 0 && index < tarefas.length) {
       tarefas[index].marcarComoConcluida();
       print("Tarefa concluída: ${tarefas[index].titulo}");
@@ -29,7 +29,7 @@ class GerenciadorTarefas {
     }
   }
 
-  void removerTarefa(int index) {
+  void removerTarefa(int index) { // metodo remover
     if (index >= 0 && index < tarefas.length) {
       print("Tarefa removida: ${tarefas[index].titulo}");
       tarefas.removeAt(index);
