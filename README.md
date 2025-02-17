@@ -5,6 +5,7 @@ Bem-vindo à documentação do **Todo CLI App**! 🎉 Este aplicativo de linha d
 ## Sumário 🗂
 - [Introdução](#introdução-)
 - [Requisitos](#requisitos-)
+- [Instalação](#instalação-)
 
 ## Introdução 🚀
 O **Todo CLI App** é uma ferramenta simples para criar, listar e remover tarefas diretamente no terminal. Ideal para quem busca uma solução leve para organizar o dia a dia!
